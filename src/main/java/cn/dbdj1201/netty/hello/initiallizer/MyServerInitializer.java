@@ -1,6 +1,5 @@
 package cn.dbdj1201.netty.hello.initiallizer;
 
-import cn.dbdj1201.netty.hello.handler.MyHttpServerHandler;
 import cn.dbdj1201.netty.hello.handler.MyNettyHttpServerHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
