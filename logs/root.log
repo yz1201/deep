@@ -1,0 +1,155 @@
+2020-08-14 10:37:25 Base.java INFO a
+2020-08-14 10:37:46 Base.java INFO a
+2020-08-14 10:38:17 Base.java INFO a
+2020-08-14 10:39:10 Base.java INFO a
+2020-08-14 10:39:22 Base.java INFO a
+2020-08-14 10:39:39 Base.java INFO a
+2020-08-14 10:44:03 Base.java INFO a
+2020-08-14 10:44:36 Base.java INFO a
+2020-08-14 10:44:58 Base.java WARN a
+2020-08-14 10:45:08 Base.java WARN a
+2020-08-14 10:45:27 Base.java ERROR a
+2020-08-14 10:45:38 Base.java ERROR a
+2020-08-14 10:45:50 Base.java ERROR a
+2020-08-14 10:46:04 Base.java ERROR a
+2020-08-14 10:46:16 Base.java ERROR a
+2020-08-14 11:30:43 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x5e0b6f92]'
+2020-08-14 11:30:43 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x5e0b6f92]'
+2020-08-14 11:31:26 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x97898922]'
+2020-08-14 11:31:26 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x97898922]'
+2020-08-14 11:32:05 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0xb33c8ed7]'
+2020-08-14 11:32:05 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xb33c8ed7]'
+2020-08-14 11:32:11 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x276b431a]'
+2020-08-14 11:32:11 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x276b431a]'
+2020-08-14 11:37:24 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x761a7c50]'
+2020-08-14 11:37:24 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x761a7c50]'
+2020-08-14 11:39:28 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x0aafa095]'
+2020-08-14 11:39:28 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x0aafa095]'
+2020-08-14 11:41:24 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x75a2a24f]'
+2020-08-14 11:41:24 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x75a2a24f]'
+2020-08-14 11:42:58 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x4944be10]'
+2020-08-14 11:42:58 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x4944be10]'
+2020-08-14 11:45:06 AbstractBootstrap.java WARN Unknown channel option 'SO_SNDBUF' for channel '[id: 0x8ef38ef4]'
+2020-08-14 11:45:06 AbstractBootstrap.java WARN Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x8ef38ef4]'
+2020-08-14 13:46:27 ChannelInitializer.java WARN Failed to initialize a channel. Closing: [id: 0xcebe3739, L:/0:0:0:0:0:0:0:1:40923 - R:/0:0:0:0:0:0:0:1:61644]
+java.lang.IllegalArgumentException: Duplicate handler name: httpServerCodec
+	at io.netty.channel.DefaultChannelPipeline.checkDuplicateName(DefaultChannelPipeline.java:1055)
+	at io.netty.channel.DefaultChannelPipeline.filterName(DefaultChannelPipeline.java:284)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:204)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:16)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:223)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:17)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.access$100(DefaultChannelPipeline.java:46)
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1463)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1115)
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:650)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:502)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-14 13:47:40 ChannelInitializer.java WARN Failed to initialize a channel. Closing: [id: 0xe9f75be8, L:/0:0:0:0:0:0:0:1:40923 - R:/0:0:0:0:0:0:0:1:61802]
+java.lang.IllegalArgumentException: Duplicate handler name: myHttpServerHandler
+	at io.netty.channel.DefaultChannelPipeline.checkDuplicateName(DefaultChannelPipeline.java:1055)
+	at io.netty.channel.DefaultChannelPipeline.filterName(DefaultChannelPipeline.java:284)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:204)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:17)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:223)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:17)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.access$100(DefaultChannelPipeline.java:46)
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1463)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1115)
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:650)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:502)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-14 13:48:41 DefaultChannelPipeline.java WARN An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-14 13:50:20 ChannelInitializer.java WARN Failed to initialize a channel. Closing: [id: 0x7ef37549, L:/0:0:0:0:0:0:0:1:40923 - R:/0:0:0:0:0:0:0:1:62039]
+java.lang.IllegalArgumentException: Duplicate handler name: httpServerCodec
+	at io.netty.channel.DefaultChannelPipeline.checkDuplicateName(DefaultChannelPipeline.java:1055)
+	at io.netty.channel.DefaultChannelPipeline.filterName(DefaultChannelPipeline.java:284)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:204)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:16)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:223)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:195)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:17)
+	at cn.dbdj1201.netty.hello.initiallizer.MyServerInitializer.initChannel(MyServerInitializer.java:12)
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129)
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112)
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:938)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609)
+	at io.netty.channel.DefaultChannelPipeline.access$100(DefaultChannelPipeline.java:46)
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1463)
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1115)
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:650)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:502)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-14 13:52:48 MyHttpServerHandler.java INFO server handler，响应数据为：UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 11, cap: 64)
